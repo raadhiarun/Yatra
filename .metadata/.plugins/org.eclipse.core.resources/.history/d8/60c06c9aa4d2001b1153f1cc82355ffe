@@ -1,0 +1,142 @@
+  
+	package SearchFlight;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
+import java.lang.reflect.Method;
+import java.util.concurrent.TimeUnit;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import SearchFlight.Xlutilities;
+
+
+public class NewTest {
+	WebDriver driver;
+	private String sTestCaseName;
+
+	private int iTestCaseRow;
+
+	@BeforeTest
+       public void test() 
+    {
+	
+		System.setProperty("webdriver.chrome.driver","C:\\Mohi\\Yatra\\jars\\chromedriver_win32\\chromedriver.exe");
+
+	//System.setProperty("webdriver.chrome.driver","C:\\Users\\admin\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	 WebDriver driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+	 driver.get("https://www.yatra.com/");
+	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+    }
+    
+//   @Test
+//   public void aa() 
+//   {
+////	   System.setProperty("webdriver.chrome.driver","C:\\Users\\admin\\Downloads\\chromedriver_win32\\chromedriver.exe");
+////		 WebDriver driver = new ChromeDriver();
+////		driver.manage().window().maximize();
+////		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+////		 driver.get("https://www.yatra.com/");
+////		 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+////	  
+//	   
+//		driver.findElement(By.id("BE_flight_origin_city")).click();
+//	
+//	driver.findElement(By.xpath("//p[@class='ac_cityname']//span[text()='(BLR)']")).click();
+//	
+//		driver.findElement(By.id("BE_flight_arrival_city")).click();
+//		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+//		driver.findElement(By.xpath("//p[@class='ac_cityname']//span[text()='(DEL)']")).click();
+//		 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
+//	
+//		driver.findElement(By.id("BE_flight_flsearch_btn")).click();
+//	}
+	
+		
+		@DataProvider
+
+		public Object[][] YatraBooking(Method m) throws Exception {
+
+			sTestCaseName = m.getName();
+			Xlutilities.setExcelFile("C:\\Mohi\\Yatra\\Yatra\\TestData\\sheet.xlsx", "Sheet1");
+			iTestCaseRow = Xlutilities.getRowContains(sTestCaseName, 0);
+			Object[][] testObjArray = Xlutilities.getTableArray(
+					"C:\\Mohi\\Yatra\\Yatra\\TestData\\sheet.xlsx", "Sheet1", iTestCaseRow);
+			
+		   
+			return (testObjArray);
+		}
+
+		@Test(dataProvider = "YatraBooking")
+		public void TC001(String DepartFrom, String GoingTo) throws InterruptedException {
+			Thread.sleep(10000);
+			System.out.println("Entered");
+			
+		//	WebDriverWait wait = new WebDriverWait(driver, 15);
+
+	//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("BE_flight_origin_city")));
+			driver.findElement(By.id("BE_flight_origin_city")).click();
+			
+			driver.findElement(By.xpath("//p[@class='ac_cityname']//span[text()='(BLR)']")).click();
+			
+				driver.findElement(By.id("BE_flight_arrival_city")).click();
+				driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+				driver.findElement(By.xpath("//p[@class='ac_cityname']//span[text()='(DEL)']")).click();
+				 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
+			
+				driver.findElement(By.id("BE_flight_flsearch_btn")).click();
+					
+//			System.out.println("Fname:" + Fname);
+//			System.out.println("Lname:"+LName);
+			//driver.close();
+			//String expName = "Bangalore";
+			//Assert.assertEquals(Fname, expName);
+			
+			
+			//extentTestManager.getTest().log(LogStatus.PASS, "Test Case Passed");
+
+		}
+		
+		
+	/*	@Test(dataProvider = "SignUpGmail")
+		public void TC002(String Fname, String LName) {
+			System.out.println("Testing");
+						System.out.println("Fname:" + Fname);
+			
+		}
+		@Test(dataProvider = "SignUpGmail")
+		public void TC003(String Fname, String LName) {
+			System.out.println("Testing");
+						System.out.println("Fname:" + Fname);
+			
+		}
+		@Test(dataProvider = "SignUpGmail")
+		public void TC004(String Fname, String LName) {
+			System.out.println("Testing");
+						System.out.println("Fname:" + Fname);
+			
+		}
+		*/
+		
+		
+		
+	}
+
+
+	
+

@@ -1,0 +1,56 @@
+package SearchFlight;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class YatraPage {
+	
+	WebDriver driver;
+	By departfrom = By.name("flight_origin");
+
+    By destination = By.name("flight_destination");
+    By search=By.id("BE_flight_flsearch_btn");
+
+	
+	/*@FindBy(name="flight_origin")
+	WebElement departfrom;
+	
+		
+	@FindBy(name="flight_destination")
+	WebElement destination;
+	
+	@FindBy(id="BE_flight_flsearch_btn")
+	WebElement searchflight;*/
+	
+	YatraPage(WebDriver driver)
+	{
+	
+	this.driver=driver;
+	}
+	
+	public void selectDepartFrom(String depart )
+	{
+		driver.findElement(departfrom).click();
+        driver.findElement(departfrom).sendKeys(depart);
+		
+	}
+	
+	public void selectGoingTo(String goingto)
+	{
+				
+		driver.findElement(destination).click();
+        driver.findElement(destination).sendKeys(goingto);
+			
+			}
+	
+	public void Clicksearch()
+	{
+		driver.findElement(search).click();
+	}
+	
+	
+}

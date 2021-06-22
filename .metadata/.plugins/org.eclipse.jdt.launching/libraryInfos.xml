@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Mani\Software\Java" version="1.8.0_231">
+<bootpath>
+<entry path="C:\Mani\Software\Java\jre\lib\resources.jar"/>
+<entry path="C:\Mani\Software\Java\jre\lib\rt.jar"/>
+<entry path="C:\Mani\Software\Java\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Mani\Software\Java\jre\lib\jsse.jar"/>
+<entry path="C:\Mani\Software\Java\jre\lib\jce.jar"/>
+<entry path="C:\Mani\Software\Java\jre\lib\charsets.jar"/>
+<entry path="C:\Mani\Software\Java\jre\lib\jfr.jar"/>
+<entry path="C:\Mani\Software\Java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Mani\Software\Java\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Mani\Software\Java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="276503" started-at="2021-06-22T07:37:42 IST" finished-at="2021-06-22T07:42:19 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="276503" started-at="2021-06-22T07:37:42 IST" finished-at="2021-06-22T07:42:19 IST">
+      <class name="SearchFlight.NewTest">
+        <test-method status="PASS" signature="test()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="test" is-config="true" duration-ms="15315" started-at="2021-06-22T07:37:43 IST" finished-at="2021-06-22T07:37:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="TC001(java.lang.String, java.lang.String)[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="TC001" duration-ms="45999" started-at="2021-06-22T07:37:58 IST" data-provider="YatraBooking" finished-at="2021-06-22T07:38:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore (BLR)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Delhi (DEL)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="af()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="af" is-config="true" duration-ms="4180" started-at="2021-06-22T07:38:44 IST" finished-at="2021-06-22T07:38:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- af -->
+        <test-method status="PASS" signature="test()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="test" is-config="true" duration-ms="11403" started-at="2021-06-22T07:38:48 IST" finished-at="2021-06-22T07:39:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="TC002(java.lang.String, java.lang.String)[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="TC002" duration-ms="51991" started-at="2021-06-22T07:39:00 IST" data-provider="YatraBooking" finished-at="2021-06-22T07:39:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore (BLR)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai (BOM)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method status="PASS" signature="af()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="af" is-config="true" duration-ms="103" started-at="2021-06-22T07:39:52 IST" finished-at="2021-06-22T07:39:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- af -->
+        <test-method status="PASS" signature="test()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="test" is-config="true" duration-ms="22924" started-at="2021-06-22T07:39:52 IST" finished-at="2021-06-22T07:40:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="TC003(java.lang.String, java.lang.String)[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="TC003" duration-ms="55394" started-at="2021-06-22T07:40:15 IST" data-provider="YatraBooking" finished-at="2021-06-22T07:41:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumbai (BOM)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Delhi (DEL)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003 -->
+        <test-method status="PASS" signature="af()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="af" is-config="true" duration-ms="4156" started-at="2021-06-22T07:41:10 IST" finished-at="2021-06-22T07:41:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- af -->
+        <test-method status="PASS" signature="test()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="test" is-config="true" duration-ms="5306" started-at="2021-06-22T07:41:15 IST" finished-at="2021-06-22T07:41:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="TC004(java.lang.String, java.lang.String)[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="TC004" duration-ms="54828" started-at="2021-06-22T07:41:20 IST" data-provider="YatraBooking" finished-at="2021-06-22T07:42:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New Delhi (DEL)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai (BOM)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004 -->
+        <test-method status="PASS" signature="af()[pri:0, instance:SearchFlight.NewTest@5ae63ade]" name="af" is-config="true" duration-ms="4140" started-at="2021-06-22T07:42:15 IST" finished-at="2021-06-22T07:42:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- af -->
+      </class> <!-- SearchFlight.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
